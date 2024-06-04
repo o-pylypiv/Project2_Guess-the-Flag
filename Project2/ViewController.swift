@@ -12,9 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
-    
     @IBOutlet var questionsAsked: UILabel!
-    
     
     var countries = [String]()
     var score = 0
@@ -39,7 +37,6 @@ class ViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(showScore))
     }
 
-
     func askQuestion(action: UIAlertAction! = nil) {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
@@ -52,9 +49,7 @@ class ViewController: UIViewController {
         
         questionsAsked.text = "Questions: \(questions)"
         questions += 1
-        
     }
-    
     
     @IBAction func buttonTapped(_ sender: UIButton) {
         var title: String
@@ -76,7 +71,6 @@ class ViewController: UIViewController {
             ac.addAction(UIAlertAction(title: "Cancel", style: .default, handler: askQuestion))
             present(ac, animated: true)
         }
-        
     }
     
     @objc func showScore() {
@@ -84,7 +78,5 @@ class ViewController: UIViewController {
         ac.addAction(UIAlertAction(title: "Cancel", style: .default, handler: askQuestion))
         present(ac, animated: true)
     }
-
-    
 }
 
