@@ -1,6 +1,6 @@
 # Project2
 
-Project2 is a simple quiz app that tests the user's knowledge of different countries.
+Project2 is a simple quiz app that tests the user's knowledge of different countries flags.
 
 ## Table of Contents
 
@@ -12,7 +12,7 @@ Project2 is a simple quiz app that tests the user's knowledge of different count
 
 ## Features
 
-* Displays a list of questions and their corresponding answers
+* Displays several flags and lets the user guess the right one
 * Allows users to answer questions and track their score
 * Includes a share feature to share the user's score
 
@@ -42,6 +42,6 @@ Project2 is a simple quiz app that tests the user's knowledge of different count
 
 ### ViewController
 
-* Manages the list of questions and their corresponding answers.
+* Manages the list of flags with only one as a right answer.
 * Handles user interactions, such as answering questions and tracking their score.
 * Includes a share feature to share the user's score.
